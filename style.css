@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #0b0f14;
+    color: white;
+}
+
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("bmw2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 8%;
+}
+
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.7)
+    );
+}
+
+
+.hero-content {
+    position: relative;
+    max-width: 420px;
+    z-index: 1;
+}
+
+.tag {
+    letter-spacing: 4px;
+    opacity: 0.8;
+}
+
+.hero-content h1 {
+    font-size: 120px;
+    line-height: 1;
+}
+
+.hero-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.emi {
+    margin-bottom: 30px;
+    opacity: 0.85;
+}
+
+.hero-content button {
+    padding: 14px 34px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.estimator {
+    background: #111827;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.estimator h2 {
+    margin-bottom: 30px;
+}
+
+.estimator select,
+.estimator button {
+    width: 260px;
+    padding: 12px;
+    margin: 10px;
+    background: #0b0f14;
+    color: white;
+    border: 1px solid #1f2933;
+}
+
+.estimator button {
+    background: #2563eb;
+    border: none;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+.description {
+    background: #111827;
+    padding: 90px 15%;
+    text-align: center;
+}
+
+.description h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.description p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+
+.why-bmw {
+    padding: 90px 10%;
+    background: #0b0f14;
+    text-align: center;
+}
+
+.why-bmw h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.why-card {
+    background: #111827;
+    padding: 35px;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+
+.why-card:hover {
+    box-shadow: 0 0 35px rgba(37, 99, 235, 0.9);
+    transform: translateY(-8px);
+}
+
+.why-card h3 {
+    color: #93c5fd;
+    margin-bottom: 12px;
+}
+
+
+
+@media (max-width: 900px) {
+    .hero {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.estimator {
+    background: linear-gradient(180deg, #0b0f14, #111827);
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.estimator h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.est-desc {
+    max-width: 500px;
+    margin: 0 auto 35px;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+
+.est-card {
+    max-width: 380px;
+    margin: auto;
+    background: #0f172a;
+    padding: 28px 26px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.55);
+}
+
+.est-field {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.est-field label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+.estimator select {
+    width: 100%;
+    padding: 10px 12px;
+    background: #020617;
+    color: white;
+    border: 1px solid #1f2933;
+    font-size: 14px;
+}
+
+
+.estimator button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.estimator button:hover {
+    background: #1d4ed8;
+    box-shadow: 0 0 16px rgba(37, 99, 235, 0.8);
+}
+
+.price-result {
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #93c5fd;
+}

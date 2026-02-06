@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW 5 Series</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <span class="tag">THE</span>
+        <h1>BMW</h1>
+        <h2>5 Series Long Wheelbase</h2>
+
+        
+
+        <button onclick="goToPrice()">Build & Price</button>
+        
+        
+    </div>
+</section>
+
+
+<section class="description">
+    <h2>BMW 5 Series Long Wheelbase</h2>
+    <p>
+        The BMW 5 Series Long Wheelbase is crafted for those who expect more from
+        every drive. It blends executive comfort with dynamic performance,
+        offering a refined experience whether you are behind the wheel or
+        enjoying the rear seat comfort.
+    </p>
+</section>
+
+
+<section class="why-bmw">
+    <h2>Why BMW 5 Series?</h2>
+
+    <div class="why-grid">
+        <div class="why-card">
+            <h3>Executive Comfort</h3>
+            <p>
+                Extended wheelbase design ensures superior legroom and unmatched
+                comfort for long journeys.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <h3>Driving Pleasure</h3>
+            <p>
+                Precision engineering delivers smooth handling, stability, and
+                responsive performance on every road.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <h3>Advanced Technology</h3>
+            <p>
+                Intelligent digital systems enhance safety, connectivity, and
+                driving convenience.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <h3>Luxury Craftsmanship</h3>
+            <p>
+                Premium materials, elegant design, and attention to detail define
+                the BMW 5 Series experience.
+            </p>
+        </div>
+        <div class="why-card">
+    <h3>Rear Seat Comfort</h3>
+    <p>
+        Designed with extended rear legroom and refined seating to deliver
+        a first-class experience for passengers.
+    </p>
+</div>
+
+<div class="why-card">
+    <h3>Brand Trust & Legacy</h3>
+    <p>
+        Backed by BMW’s engineering excellence, global reputation, and
+        long-standing commitment to performance and innovation.
+    </p>
+</div>
+
+    </div>
+</section>
+
+<section class="estimator reveal" id="price">
+    <h2>Build & Price</h2>
+    <p class="est-desc">
+        Customize your BMW 5 Series by selecting the variant and fuel type
+        to get an estimated on-road price.
+    </p>
+
+    <div class="est-card">
+        <div class="est-field">
+            <label>Select Variant</label>
+            <select id="variant">
+                <option value="0">Choose Variant</option>
+                <option value="6500000">Base</option>
+                <option value="7200000">Sport</option>
+                <option value="8100000">Luxury</option>
+            </select>
+        </div>
+
+        <div class="est-field">
+            <label>Select Fuel Type</label>
+            <select id="fuel">
+                <option value="0">Petrol</option>
+                <option value="200000">Diesel</option>
+                <option value="350000">Hybrid</option>
+            </select>
+        </div>
+
+        <button onclick="calculatePrice()">Get Estimated Price</button>
+
+        <p id="result" class="price-result">Estimated Price: ₹0</p>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
